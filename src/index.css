@@ -15,7 +15,7 @@ body {
 
 .main {
   width: 30%;
-  height: 30%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;

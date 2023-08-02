@@ -31,6 +31,11 @@ function App() {
     setCount((c) => c + step);
   }
 
+  function handleReset() {
+    setStep(1);
+    setCount(0);
+  }
+
   return (
     <div className="main">
       <h1>Date Counter</h1>
@@ -61,6 +66,7 @@ function App() {
           `${Math.abs(count)} days from today is : ${d.toDateString()}`}
         {count < 0 && `${Math.abs(count)} days ago was : ${d.toDateString()}`}
       </p>
+      <button onClick={handleReset}>Reset</button>
     </div>
   );
 }
